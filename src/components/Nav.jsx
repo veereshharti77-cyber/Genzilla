@@ -55,12 +55,12 @@ export default function Nav() {
       </ul>
 
       {/* Desktop WhatsApp Button */}
-      <button
+      {/* <button
         onClick={openWhatsApp}
         className="nav-btn hidden sm:inline-block"
       >
         Let's Talk
-      </button>
+      </button> */}
 
       {/* Mobile Hamburger */}
       <button
@@ -95,18 +95,18 @@ export default function Nav() {
               key={link.href}
               href={link.href}
               onClick={scrollTo(link.href.substring(1))}
-              className="text-gray-800 uppercase text-sm font-medium"
+              className="text-white  uppercase text-sm font-medium"
             >
               {link.label}
             </a>
           ))}
 
-          <button
+          {/* <button
             onClick={openWhatsApp}
             className="nav-btn w-full text-center"
           >
             Let's Talk
-          </button>
+          </button> */}
         </div>
       )}
     </nav>

@@ -1,9 +1,16 @@
 const stats = [
-  { num: '240+', label: 'Brands Scaled', color: '' },
-  { num: '₹18Cr+', label: 'Revenue Generated', color: 'pink' },
-  { num: '900%', label: 'Avg. Campaign ROI', color: 'yellow' },
-  { num: '12M+', label: 'Reach Delivered', color: '' },
+  { num: 'Genzilla', label: '', color: '' },
+  { num: 'Your Marketing', label: '', color: 'pink' },
+  { num: 'Plug-in', label: '', color: 'yellow' },
+ 
 ]
+
+const openWhatsApp = () => {
+  window.open(
+    "https://wa.me/919008824184?text=Hi%20I'm%20interested%20in%20your%20services.",
+    "_blank"
+  );
+};
 
 const stripItems = [
   'Content Creation', 'Influencer Marketing', 'Paid Performance',
@@ -12,7 +19,7 @@ const stripItems = [
 
 export default function Hero() {
   return (
-    <section id="home" style={{ paddingTop: 0, marginTop: -8 }}>
+    <section id="home" className="relative">
       <div className="hero-bg"></div>
       <div className="hero-blob"></div>
       <div className="hero-blob-pink"></div>
@@ -25,12 +32,38 @@ export default function Hero() {
             <span className="line-outlined">Brands</span>
             <span className="line-pink glitch" data-text="Go Viral.">Go Viral.</span>
           </h1>
-          <p className="hero-sub">Culture-first. Platform-native. ROI-obsessed. We build social media presence that doesn't just perform — it dominates.</p>
+          <p className="hero-sub">
+            Culture-first. Platform-native. ROI-obsessed. We build social
+            media presence that doesn't just perform — it dominates.
+          </p>
           <div className="hero-ctas">
-            <a className="btn-slash btn-filled" href="#portfolio">See Our Work</a>
-            <a className="btn-slash btn-ghost" href="#contact">Start a Project →</a>
+            <a className="btn-slash btn-ghost" href="#portfolio">See Our Work</a>
+            <a className="btn-slash btn-filled" href="#contact">Start a Project →</a>
+            
           </div>
+          <div
+  className="
+    absolute
+    left-1/2
+    -translate-x-1/2
+    z-30
+    top-[93%]
+    sm:top-[100%]
+    md:top-[96%]
+    md:-translate-y-1/2
+  "
+>
+  <button
+    type="button"
+    onClick={openWhatsApp}
+    className="btn-slash btn-ghost"
+  >
+    Let's Talk
+  </button>
+</div>
+          
         </div>
+        
 
         <div className="hero-right">
           {stats.map((s, i) => (
@@ -45,6 +78,8 @@ export default function Hero() {
           ))}
         </div>
       </div>
+
+      
 
       <div className="hero-strip">
         {stripItems.map((item, i) => (

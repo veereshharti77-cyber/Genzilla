@@ -9,6 +9,7 @@ export default function Contact() {
     name: "",
     brand: "",
     email: "",
+    phone: "",
     budget: "",
     message: "",
   });
@@ -21,7 +22,7 @@ export default function Contact() {
   };
 
   const handleSubmit = async () => {
-    if (!form.name || !form.email || !form.message) {
+    if (!form.name || !form.email || !form.phone ||!form.message) {
       alert("Please fill all required fields.");
       return;
     }
@@ -36,6 +37,7 @@ export default function Contact() {
           name: form.name,
           brand: form.brand,
           email: form.email,
+          phone: form.phone,
           budget: form.budget,
           message: form.message,
           time: new Date().toLocaleString(),
@@ -49,6 +51,7 @@ export default function Contact() {
         name: "",
         brand: "",
         email: "",
+        phone: "",
         budget: "",
         message: "",
       });
@@ -161,6 +164,17 @@ export default function Contact() {
               onChange={handleChange("email")}
             />
           </div>
+          <div className="form-group">
+  <label className="form-label">Phone Number *</label>
+
+  <input
+    className="form-input"
+    type="tel"
+    placeholder="+91 0000000000"
+    value={form.phone}
+    onChange={handleChange("phone")}
+  />
+</div>
 
           <div className="form-group">
             <label className="form-label">Monthly Budget</label>
