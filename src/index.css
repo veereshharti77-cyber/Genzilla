@@ -168,7 +168,7 @@ nav {
 ═══════════════════════════════════════════════ */
 #home {
   min-height: 100vh;
-  padding-top: 68px;
+  padding-top: 20px;
   position: relative;
   overflow: hidden;
   display: grid;
@@ -929,7 +929,7 @@ footer {
 @media(max-width: 600px) {
   section { padding: 72px 20px; }
   nav { padding: 0 20px; height: 60px; }
-  #home { margin-top: -120px; } 
+  #home { margin-top: -82px; } 
   .nav-logo { font-size: 22px; }
   .nav-links { display: none; }
   .hero-content { padding: 0 20px; }
