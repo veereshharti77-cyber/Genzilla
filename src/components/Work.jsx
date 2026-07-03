@@ -1,7 +1,7 @@
 const services = [
   { num: '01', name: 'Content Creation', tag: 'Reels · Carousels · Memes · Long-Form', pink: false },
   { num: '02', name: 'Influencer Marketing', tag: 'Nano → Mega · ROI Tracked', pink: true },
-  { num: '03', name: 'Paid Performance', tag: 'Meta · Google · YouTube', pink: false },
+  { num: '03', name: 'Paid Performance', tag: 'Meta · Google ', pink: false },
   { num: '04', name: 'Brand Identity', tag: 'Visual Systems · Digital-First', pink: true },
   { num: '05', name: 'Community Building', tag: 'Followers → Tribe', pink: false },
   { num: '06', name: 'Strategy & Analytics', tag: 'KPI-Clear · Weekly Reports', pink: true },

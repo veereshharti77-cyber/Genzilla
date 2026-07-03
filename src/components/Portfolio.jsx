@@ -1,10 +1,10 @@
 const projects = [
-  { cat: 'Influencer Campaign', name: 'NIGHTOUT BOMBAY', result: '14 influencers · 2.1M reach · 900% ROI · Sold-out event, 3× capacity', pink: true },
-  { cat: 'B2B Social Strategy', name: 'ZARAN TECH', result: 'LinkedIn growth +340% in 90 days. Organic leads 4×.', pink: false },
-  { cat: 'Content & Brand', name: 'VELVET BEAUTY', result: '0 → 18K followers in 6 months. Zero paid budget.', pink: true },
-  { cat: 'Paid + Organic', name: 'URBAN DINE', result: '₹42L social revenue in Q4. ROAS: 8.4×', pink: false },
-  { cat: 'Event + Social', name: 'CHRONIX EVENTS', result: 'Sold-out via social. 3× projected capacity.', pink: true },
-  { cat: 'AI Content Pipeline', name: 'LUXE REALTY MUMBAI', result: '60 AI-generated videos · 4.4M impressions · 12 leads/week', pink: false, big: true },
+  { cat: 'Genzilla', name: 'We are fresh on the scene,', result: ' but we know the assignment. Let us take over your timeline, build the hype and turn your socials into a literal cash cow. No cap', pink: true },
+  // { cat: 'B2B Social Strategy', name: 'ZARAN TECH', result: 'LinkedIn growth +340% in 90 days. Organic leads 4×.', pink: false },
+  // { cat: 'Content & Brand', name: 'VELVET BEAUTY', result: '0 → 18K followers in 6 months. Zero paid budget.', pink: true },
+  // { cat: 'Paid + Organic', name: 'URBAN DINE', result: '₹42L social revenue in Q4. ROAS: 8.4×', pink: false },
+  // { cat: 'Event + Social', name: 'CHRONIX EVENTS', result: 'Sold-out via social. 3× projected capacity.', pink: true },
+  // { cat: 'AI Content Pipeline', name: 'LUXE REALTY MUMBAI', result: '60 AI-generated videos · 4.4M impressions · 12 leads/week', pink: false, big: true },
 ]
 
 export default function Portfolio() {
@@ -13,9 +13,9 @@ export default function Portfolio() {
       <div className="portfolio-head reveal">
         <div>
           <div className="section-eyebrow">Selected Work</div>
-          <h2 className="section-h2">Archive of<br/><span style={{ color: 'var(--green)' }}>Excellence.</span></h2>
+          <h2 className="section-h2">Our Previous <br/><span style={{ color: 'var(--green)' }}>Work.</span></h2>
         </div>
-        <a
+        {/* <a
           className="btn-slash btn-ghost"
           href="#contact"
           style={{
@@ -30,7 +30,7 @@ export default function Portfolio() {
           }}
         >
           View All →
-        </a>
+        </a> */}
       </div>
 
       <div className="portfolio-grid">

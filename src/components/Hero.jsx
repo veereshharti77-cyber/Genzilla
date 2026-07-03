@@ -26,7 +26,7 @@ export default function Hero() {
 
       <div className="hero-content">
         <div className="hero-left">
-          <div className="hero-tag">◈ &nbsp; Mumbai's #1 GenZ Agency</div>
+          <div className="hero-tag">◈ &nbsp; Your GenZ MArketing Plug-in</div>
           <h1 className="hero-h1">
             <span className="line-green">We Make</span>
             <span className="line-outlined">Brands</span>
