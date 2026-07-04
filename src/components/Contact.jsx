@@ -105,21 +105,13 @@ export default function Contact() {
           </div>
 
           <div className="social-row reveal">
-            <a className="soc-link" href="#">
+            <a className="soc-link" href="https://www.instagram.com/genzilla.blr"
+            target="_blank"
+    rel="noopener noreferrer">
               Instagram
             </a>
 
-            <a className="soc-link" href="#">
-              LinkedIn
-            </a>
-
-            <a className="soc-link" href="#">
-              Twitter/X
-            </a>
-
-            <a className="soc-link" href="#">
-              YouTube
-            </a>
+            
           </div>
         </div>
 
